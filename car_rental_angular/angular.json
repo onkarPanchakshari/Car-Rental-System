@@ -44,6 +44,12 @@
           },
           "configurations": {
             "production": {
+              "fileReplacements": [
+                {
+                "replace": "src/app/auth/services/auth/auth.service.ts",
+                "with": "src/app/auth/services/auth/auth.production.service.ts"
+                }
+              ],
               "budgets": [
                 {
                   "type": "initial",
