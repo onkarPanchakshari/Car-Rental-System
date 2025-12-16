@@ -19,6 +19,5 @@ RUN npm run build -- --configuration production
 
 FROM nginx:alpine
 COPY --from=ANGULAR_BUILD /app/dist/car_rental_angular /usr/share/ng
-inx/html
 EXPOSE 4200
 CMD ["nginx", "-g", "daemon off;"]
